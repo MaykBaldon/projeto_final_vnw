@@ -1,20 +1,19 @@
 
 .principal{
-    border: solid 2px red;
     height: 80vh;
     display: flex;
     justify-content: center;
+
 }
 
 .container{
-    border: solid 2px green; 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     form{
         border: solid 2px #005695;
-        width: 25vw;
+        width: 30vw;
         height: 60vh;
         border-radius: 15px;
         display: flex;
@@ -28,6 +27,37 @@
             justify-content: space-around;
             color: #005695;
         }
+        .doar{
+            background-color: #005695;
+            width: 100px;
+            height: 30px;
+            padding-left: 0;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
     }
 }
 
+@media (max-width: 1000px){
+    .container{
+        text-align: center;
+        gap: 20px;
+        padding-bottom: 2.5vh;
+        padding-top: 2.5vh;
+        form{
+            div{
+                flex-direction: column;
+                gap: 10px;
+            }
+            width: 80vw;
+            height: 80vh;
+            input{
+                font-size: 1.8vh;
+                width: 50vw;
+            }
+        }
+
+    }
+}

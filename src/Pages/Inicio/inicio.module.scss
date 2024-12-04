@@ -52,20 +52,6 @@
     }
 }
 
-@media(max-width: 780px){
-
-    .post{
-        justify-content: center;
-        h2{
-            
-            width: 80%;
-            margin-left: 0;
-            text-align: center;
-        }
-    }
-
-}
-
 @media(max-width: 1000px){
   .boxCard{
     article{
@@ -77,6 +63,15 @@
 }
 
 @media(max-width: 780px){
+    .post{
+        justify-content: center;
+        h2{
+            
+            width: 80%;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
     .devoDoar{
         
         height: 120vh;
