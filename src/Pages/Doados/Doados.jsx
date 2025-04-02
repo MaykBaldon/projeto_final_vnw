@@ -1,5 +1,5 @@
 import S from './doados.module.scss'
-import livro from '../../assets/livro.png'
+import livro from '../../assets/book.png'
 import axios from 'axios'
 import {useState,useEffect} from 'react'
 
@@ -10,8 +10,12 @@ export default function Doados(){
     const [livros, setLivros] = useState([])
 
     const getLivros = async () => {
-        const response = await axios.get("Link da sua API")
-        setLivros(response.data)
+        try {
+            const response = await axios.get("https://desafio-vnw-backend.onrender.com/livros")
+            setLivros(response.data)
+        } catch (error) {
+            console.error("Erro ao buscar livros:", error)
+        }
     }
 
     useEffect(()=>{
@@ -43,5 +47,5 @@ export default function Doados(){
 
             </section>
         </section>
-    )
+    )
 }

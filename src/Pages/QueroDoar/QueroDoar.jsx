@@ -1,5 +1,5 @@
 import S from "./queroDoar.module.scss"
-import livro from "../../assets/vetor.png"
+import livro from "../../assets/vector.png"
 import axios from 'axios'
 import {useState} from "react"
 
@@ -12,7 +12,7 @@ export default function QueroDoar(){
 
     const enviarDados = async()=>{
         
-        const urlApi = "Link da sua API" 
+        const urlApi = "https://desafio-vnw-backend.onrender.com/doar" 
 
         const dadosEnviar = {
             titulo,
